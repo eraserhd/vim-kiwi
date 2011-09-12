@@ -4,7 +4,14 @@ kiwi.vim
 `kiwi.vim` is a plugin for working with the [Kiwi](http://kiwi-lib.org/)
 library for behavior-driven development.  Right now, it simply adds
 smart folding, but I have some abbreviations which I'll add once I
-hammer out some kinks.
+hammer out some pretty ugly kinks.
+
+Which Files Are Kiwi?
+---------------------
+
+To keep things simple, I just match anything that matches `*Spec.m`
+or `*Spec.mm`.  You can add your own `autocmd` rules to if you use
+a different naming convention.
 
 Folding
 -------
@@ -65,4 +72,20 @@ this repository into your ~/.vim/bundle directory like so:
 
     cd ~/.vim/bundle
     git clone git://github.com/eraserhd/vim-kiwi.git
+
+Self-promotion
+--------------
+
+If you are interested in more ways to use Vim and the command-line for working
+on iOS and Mac projects (defeating the XcodeOSaurus so that the pheasant
+coders can live in peace and productivity), please follow my blog,
+[The Objective Vimmer].  Or follow [me on Twitter].  Or, if you really like my
+work, a [paid subscription to The Objective Vimmer] will get you access to my
+screencasts in addition to the blog posts and a great deal of gratitude.
+
+[me on Twitter]: http://twitter.com/eraserhd/
+[The Objective Vimmer]: http://vios.eraserhead.net/
+[paid subscription to The Objective Vimmer]: http://vios.eraserhead.net/subscribe.html
+
+Thank you!
 
