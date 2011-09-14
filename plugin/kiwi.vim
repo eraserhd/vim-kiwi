@@ -10,9 +10,9 @@ let g:loaded_kiwi = 1
 " Kiwi specs
 augroup Kiwi
   autocmd!
-"  autocmd BufNewFile,BufRead *Spec.m,*Spec.mm iabbrev <buffer> it });<ESC>Oit(@"", ^{<ESC>^f"a<C-R>=Eatchar('\s')<CR>
-"  autocmd BufNewFile,BufRead *Spec.m,*Spec.mm iabbrev <buffer> describe });<ESC>Odescribe(@"", ^{<ESC>^f"a<C-R>=Eatchar('\s')<CR>
-"  autocmd BufNewFile,BufRead *Spec.m,*Spec.mm iabbrev <buffer> context });<ESC>Ocontext(@"", ^{<ESC>^f"a<C-R>=Eatchar('\s')<CR>
+  autocmd BufNewFile,BufRead *Spec.m,*Spec.mm iabbrev <buffer> It });<ESC>Oit(@"", ^{<ESC>^f"a<C-R>=Eatchar('\s')<CR>
+  autocmd BufNewFile,BufRead *Spec.m,*Spec.mm iabbrev <buffer> Describe });<ESC>Odescribe(@"", ^{<ESC>^f"a<C-R>=Eatchar('\s')<CR>
+  autocmd BufNewFile,BufRead *Spec.m,*Spec.mm iabbrev <buffer> Context });<ESC>Ocontext(@"", ^{<ESC>^f"a<C-R>=Eatchar('\s')<CR>
   autocmd BufNewFile,BufRead *Spec.m,*Spec.mm set foldmethod=expr foldexpr=KiwiFoldLevel(v:lnum)
 augroup END
 
