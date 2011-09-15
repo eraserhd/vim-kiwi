@@ -2,9 +2,8 @@ kiwi.vim
 ========
 
 `kiwi.vim` is a plugin for working with the [Kiwi](http://kiwi-lib.org/)
-library for behavior-driven development.  Right now, it simply adds
-smart folding, but I have some abbreviations which I'll add once I
-hammer out some pretty ugly kinks.
+library for behavior-driven development.  This plugin adds smart folding
+and abbreviations.
 
 Which Files Are Kiwi?
 ---------------------
@@ -62,6 +61,20 @@ And can be expanded like so:
     });
 
     SPEC_END
+
+Abbreviations
+-------------
+
+The supported abbreviations are "It", "Describe", and "Context".  The leading
+caps are there to prevent the abbreviations from being triggered accidently
+and to make using them a choice.  Typing "It" followed by a non-word character
+will expand to the following:
+
+    it(@"_", ^{
+    });
+
+(`_` is the cursor's location.)  "Describe" and "Context" expand in the same
+way.
 
 Installation
 ------------
