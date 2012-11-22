@@ -65,16 +65,16 @@ And can be expanded like so:
 Abbreviations
 -------------
 
-The supported abbreviations are "It", "Describe", and "Context".  The leading
-caps are there to prevent the abbreviations from being triggered accidently
-and to make using them a choice.  Typing "It" followed by a non-word character
-will expand to the following:
+The supported abbreviations are "It", "Describe", "Pending", and "Context".  
+The leading caps are there to prevent the abbreviations from being triggered
+accidently.  Typing "It" followed by a non-word character will expand to the
+following:
 
     it(@"_", ^{
     });
 
-(`_` is the cursor's location.)  "Describe" and "Context" expand in the same
-way.
+(`_` is the cursor's location.)  "Describe", "Pending", and "Context" expand
+in the same way.
 
 Installation
 ------------
